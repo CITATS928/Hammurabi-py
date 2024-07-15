@@ -1,12 +1,16 @@
 import unittest
-import Hammurabi
+#import Hammurabi
 import sys
 import os
 sys.path.insert(0, '/Users/qian/Desktop/ZipCode/Python/Hammurabi-py/Hammurabi.py')
+from Hammurabi import Hammurabi
 
 class HammurabiTest(unittest.TestCase):
-    def __init__(self):
+    def setUp(self):
+    #def __init__(self):
         self.ham = Hammurabi()
+
+
 
     def about(self, expected, actual):
         return 0.90 * expected < actual < 1.10 * expected
